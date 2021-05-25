@@ -1,0 +1,76 @@
+factorTypes:
+- _id: 3fBY3otMoYij86qst
+  description: The number of players in a given game.
+  min: 1
+  name: playerCount
+  required: 'true'
+  type: Integer
+- _id: cG8uB67ZeMSj7tT4j
+  description: The length of the game in minutes.
+  min: 0
+  name: duration
+  required: 'true'
+  type: Integer
+- _id: GsYYvJCSL89R4vqyC
+  description: Which game setup to use for the game.
+  name: gameSetupId
+  required: 'false'
+  type: String
+- _id: rbRrg9tPLHKi7rRzH
+  description: which json file to load the experiment data from
+  name: experimentDataFile
+  required: 'false'
+  type: String
+factors:
+- _id: TLK5wHri9PzBifftH
+  factorTypeId: 3fBY3otMoYij86qst
+  name: TestPlayers
+  value: 4
+- _id: kPxTkTyoj299AXrDb
+  factorTypeId: cG8uB67ZeMSj7tT4j
+  name: playOneMin
+  value: 1
+- _id: RxikvsuNLyf3qZbN8
+  factorTypeId: cG8uB67ZeMSj7tT4j
+  name: play8Min
+  value: 8
+- _id: EcLgnjhavoouGbhbc
+  factorTypeId: 3fBY3otMoYij86qst
+  name: run_20_playerrun_20_player
+  value: 40
+- _id: q8wJmuXRJB6cMvkDh
+  factorTypeId: rbRrg9tPLHKi7rRzH
+  name: exp_design5_matched_20191211_112233
+  value: exp_design5_matched_20191211_112233.json
+- _id: bBWwd555v2mjd24kF
+  factorTypeId: GsYYvJCSL89R4vqyC
+  name: panel_0_matched_pair_exp_design5_matched_20191211_112233
+  value: panel_0_matched_pair_exp_design5_matched_20191211_112233
+- _id: Qw92EghNb5ze37Xrr
+  factorTypeId: GsYYvJCSL89R4vqyC
+  name: panel_1_matched_pair_exp_design5_matched_20191211_112233
+  value: panel_1_matched_pair_exp_design5_matched_20191211_112233
+lobbyConfigs:
+- gameLobbyIds: []
+  timeoutInSeconds: 1500000
+  timeoutStrategy: fail
+  timeoutType: lobby
+treatments:
+- factorIds:
+  - bBWwd555v2mjd24kF
+  - RxikvsuNLyf3qZbN8
+  - EcLgnjhavoouGbhbc
+  - q8wJmuXRJB6cMvkDh
+  name: panel_0_matched_pair_exp_design5_matched_20191211_112233
+- factorIds:
+  - Qw92EghNb5ze37Xrr
+  - RxikvsuNLyf3qZbN8
+  - EcLgnjhavoouGbhbc
+  - q8wJmuXRJB6cMvkDh
+  name: panel_1_matched_pair_exp_design5_matched_20191211_112233
+- factorIds:
+  - Qw92EghNb5ze37Xrr
+  - kPxTkTyoj299AXrDb
+  - TLK5wHri9PzBifftH
+  - q8wJmuXRJB6cMvkDh
+  name: testGame

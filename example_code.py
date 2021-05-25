@@ -55,7 +55,7 @@ def measure(g, beliefs, initial_susceptible=None, initial_adopted=None):
     """Take measurements of the state of the system (for creating figures)"""
     res = {}  # dictionary to collect measurements
 
-    # Fig 3A: Susceptible and adopting populations
+    # Fig 2A: Susceptible and adopting populations
     # --------------------------------------------
     # build a matrix of who (rows) is susceptible to what beliefs (columns)
     suscep = pd.DataFrame(index=g.nodes(), columns=[tuple(b) for b in beliefs])
@@ -71,7 +71,7 @@ def measure(g, beliefs, initial_susceptible=None, initial_adopted=None):
             adopt.at[agent, belief] = g.nodes[agent]['M'].has_edge(*belief)
     res['% adopted'] = adopt.mean().mean()  # average adopting fraction across all beliefs
 
-    # Fig 3B:correlation between predicted new adoption and actual new adoption
+    # Fig 2B:correlation between predicted new adoption and actual new adoption
     # -------------------------------------------------------------------------
     if initial_adopted is not None and initial_susceptible is not None:  # t>0
         res['initial prediction correlation'] = np.corrcoef(
@@ -83,7 +83,7 @@ def measure(g, beliefs, initial_susceptible=None, initial_adopted=None):
         initial_susceptible = suscep.sum(axis=0)
         res['initial prediction correlation'] = np.nan  # measure has no meaning at t0
 
-    # Fig 3C: correlation between a belief and it's most popular neighbor
+    # Fig 2C: correlation between a belief and it's most popular neighbor
     # -------------------------------------------------------------------
     adopt_counts = pd.DataFrame()
     adopt_counts['self'] = adopt.sum(axis=0)
@@ -97,7 +97,7 @@ def measure(g, beliefs, initial_susceptible=None, initial_adopted=None):
         adopt_counts.at[[c1], 'leading neighbor'] = leading_value
     res['leading neighbor correlation'] = adopt_counts.corr().loc['self', 'leading neighbor']
 
-    # Fig 3D: clustering coefficient of 10% most popular beliefs
+    # Fig 2D: clustering coefficient of 10% most popular beliefs
     # ----------------------------------------------------------
     # shuffle within sorted value so that when 10% falls within a level of popularity
     # we don't add spurious clustering by selecting sequential beliefs
@@ -107,14 +107,14 @@ def measure(g, beliefs, initial_susceptible=None, initial_adopted=None):
     popular_graph = nx.from_edgelist(list(leaders.index))  # construct semantic network from leading beliefs
     res['popular belief clustering'] = nx.average_clustering(popular_graph)
 
-    # Fig 5A: similarity btw 5% and 95% most similar pairs
+    # Fig 3A: similarity btw 5% and 95% most similar pairs
     # ----------------------------------------------------
     n_agents = len(adopt.index)
     corrs = adopt.astype(float).T.corr().mask(np.tri(n_agents, n_agents, 0, dtype='bool')).stack()
     res['95% similarity'] = np.percentile(corrs, 95)
     res['5% similarity'] = np.percentile(corrs, 5)
 
-    # Fig 5B: PC1 percent variance
+    # Fig 3B: PC1 percent variance
     # ----------------------------
     pca = PCA(n_components=1)
     pca.fit(adopt)

@@ -1,0 +1,456 @@
+factorTypes:
+- _id: NY4wxzBvMsGKaTZCe
+  description: The number of players in a given game.
+  min: 1
+  name: playerCount
+  required: 'true'
+  type: Integer
+- _id: NLow4XkHyegy4rPje
+  description: The length of the game in minutes.
+  min: 0
+  name: duration
+  required: 'true'
+  type: Integer
+- _id: mMxJ6u3Y9Nf7RCEJZ
+  description: Which game setup to use for the game.
+  name: gameSetupId
+  required: 'false'
+  type: String
+- _id: yB7xEh3ZYCTxcm6NS
+  description: which json file to load the experiment data from
+  name: experimentDataFile
+  required: 'false'
+  type: String
+factors:
+- _id: cfjyztHHL3SdHZ6kM
+  factorTypeId: NY4wxzBvMsGKaTZCe
+  name: TestPlayers
+  value: 4
+- _id: BK3xuRgodLXzBbGG3
+  factorTypeId: NLow4XkHyegy4rPje
+  name: playOneMin
+  value: 1
+- _id: He8zHj8sbvb4PpvCT
+  factorTypeId: NLow4XkHyegy4rPje
+  name: play8Min
+  value: 8
+- _id: NXQdzGBkuL2resjjC
+  factorTypeId: NY4wxzBvMsGKaTZCe
+  name: run_20_playerrun_20_player
+  value: 40
+- _id: FZZDWxbc2MFjg6oFE
+  factorTypeId: yB7xEh3ZYCTxcm6NS
+  name: exp_design5_matched_20200214_154755
+  value: exp_design5_matched_20200214_154755.json
+- _id: 2f83hSdJdyomvZQhk
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_0_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_0_matched_pair_exp_design5_matched_20200214_154755
+- _id: nH7viFSovXhoQqfCB
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_1_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_1_matched_pair_exp_design5_matched_20200214_154755
+- _id: HSq6s3Lcetso2rj3D
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_2_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_2_matched_pair_exp_design5_matched_20200214_154755
+- _id: rnBBGmi5CPMGnsMc6
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_3_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_3_matched_pair_exp_design5_matched_20200214_154755
+- _id: BWF6q2buHMxcLSXy6
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_4_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_4_matched_pair_exp_design5_matched_20200214_154755
+- _id: yCzfkSrABDv2uFawm
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_5_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_5_matched_pair_exp_design5_matched_20200214_154755
+- _id: txjbZQZsdnB7WS3w8
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_6_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_6_matched_pair_exp_design5_matched_20200214_154755
+- _id: JX9zP2q5wbDZ4aQx7
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_7_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_7_matched_pair_exp_design5_matched_20200214_154755
+- _id: 4yNYLEQqqv8BPgZKA
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_8_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_8_matched_pair_exp_design5_matched_20200214_154755
+- _id: zTtPCucRgcNmkn6xE
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_9_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_9_matched_pair_exp_design5_matched_20200214_154755
+- _id: bkvL4xH7PoNtkagXB
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_10_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_10_matched_pair_exp_design5_matched_20200214_154755
+- _id: NLvfRxk7eim29vS9S
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_11_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_11_matched_pair_exp_design5_matched_20200214_154755
+- _id: NXh2N5NAfEXXjFfdg
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_12_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_12_matched_pair_exp_design5_matched_20200214_154755
+- _id: F8xY48ti3TXa36sGf
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_13_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_13_matched_pair_exp_design5_matched_20200214_154755
+- _id: vS6YdLM9uynAMjvvk
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_14_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_14_matched_pair_exp_design5_matched_20200214_154755
+- _id: NT7cJJ32pdBhvoybQ
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_15_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_15_matched_pair_exp_design5_matched_20200214_154755
+- _id: CS8mrERkoKt2XckHA
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_16_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_16_matched_pair_exp_design5_matched_20200214_154755
+- _id: QWnDfBjTciHLvXKsw
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_17_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_17_matched_pair_exp_design5_matched_20200214_154755
+- _id: BmYz2vu8C2C3BCdou
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_18_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_18_matched_pair_exp_design5_matched_20200214_154755
+- _id: e69xdHXRpmtPDpvHd
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_19_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_19_matched_pair_exp_design5_matched_20200214_154755
+- _id: Mr4pN6PgkGdDyAdWQ
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_20_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_20_matched_pair_exp_design5_matched_20200214_154755
+- _id: JdhYaCqH53GRxFhNG
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_21_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_21_matched_pair_exp_design5_matched_20200214_154755
+- _id: wnwgejDoPdgARyzXS
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_22_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_22_matched_pair_exp_design5_matched_20200214_154755
+- _id: qYZBTBP7KsASNaEmD
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_23_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_23_matched_pair_exp_design5_matched_20200214_154755
+- _id: 48cQk6b8nQfZWjM6m
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_24_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_24_matched_pair_exp_design5_matched_20200214_154755
+- _id: F8pJLgsbNenJdWtXC
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_25_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_25_matched_pair_exp_design5_matched_20200214_154755
+- _id: FMRkJR7Yn2NXGCi9y
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_26_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_26_matched_pair_exp_design5_matched_20200214_154755
+- _id: oitHwBmbxRNvXKugM
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_27_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_27_matched_pair_exp_design5_matched_20200214_154755
+- _id: 3J7MwGG9bx8mNAkQ9
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_28_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_28_matched_pair_exp_design5_matched_20200214_154755
+- _id: BMSpagnwvy6E5HA9z
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_29_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_29_matched_pair_exp_design5_matched_20200214_154755
+- _id: fFhGQQ3CJYi9TaipA
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_30_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_30_matched_pair_exp_design5_matched_20200214_154755
+- _id: QbWoBvsAzeefN49uq
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_31_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_31_matched_pair_exp_design5_matched_20200214_154755
+- _id: BLCmGQ5pEtpzoCKrC
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_32_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_32_matched_pair_exp_design5_matched_20200214_154755
+- _id: YDa8zZ4ZJpmCYQFGE
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_33_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_33_matched_pair_exp_design5_matched_20200214_154755
+- _id: CwXNpyX2zj8dALGni
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_34_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_34_matched_pair_exp_design5_matched_20200214_154755
+- _id: Bec9aEg5kru3AfBTC
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_35_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_35_matched_pair_exp_design5_matched_20200214_154755
+- _id: pxJ7vs6kF4mJtL53u
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_36_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_36_matched_pair_exp_design5_matched_20200214_154755
+- _id: nA9GkkLNwoehMuZF6
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_37_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_37_matched_pair_exp_design5_matched_20200214_154755
+- _id: NByeELBDEFjDL8T92
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_38_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_38_matched_pair_exp_design5_matched_20200214_154755
+- _id: LCSq6SENQnAdAcj4o
+  factorTypeId: mMxJ6u3Y9Nf7RCEJZ
+  name: panel_39_matched_pair_exp_design5_matched_20200214_154755
+  value: panel_39_matched_pair_exp_design5_matched_20200214_154755
+lobbyConfigs:
+- gameLobbyIds: []
+  timeoutInSeconds: 1500000
+  timeoutStrategy: fail
+  timeoutType: lobby
+treatments:
+- factorIds:
+  - 2f83hSdJdyomvZQhk
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_0_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - nH7viFSovXhoQqfCB
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_1_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - HSq6s3Lcetso2rj3D
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_2_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - rnBBGmi5CPMGnsMc6
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_3_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - BWF6q2buHMxcLSXy6
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_4_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - yCzfkSrABDv2uFawm
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_5_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - txjbZQZsdnB7WS3w8
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_6_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - JX9zP2q5wbDZ4aQx7
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_7_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - 4yNYLEQqqv8BPgZKA
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_8_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - zTtPCucRgcNmkn6xE
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_9_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - bkvL4xH7PoNtkagXB
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_10_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - NLvfRxk7eim29vS9S
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_11_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - NXh2N5NAfEXXjFfdg
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_12_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - F8xY48ti3TXa36sGf
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_13_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - vS6YdLM9uynAMjvvk
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_14_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - NT7cJJ32pdBhvoybQ
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_15_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - CS8mrERkoKt2XckHA
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_16_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - QWnDfBjTciHLvXKsw
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_17_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - BmYz2vu8C2C3BCdou
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_18_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - e69xdHXRpmtPDpvHd
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_19_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - Mr4pN6PgkGdDyAdWQ
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_20_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - JdhYaCqH53GRxFhNG
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_21_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - wnwgejDoPdgARyzXS
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_22_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - qYZBTBP7KsASNaEmD
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_23_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - 48cQk6b8nQfZWjM6m
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_24_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - F8pJLgsbNenJdWtXC
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_25_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - FMRkJR7Yn2NXGCi9y
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_26_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - oitHwBmbxRNvXKugM
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_27_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - 3J7MwGG9bx8mNAkQ9
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_28_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - BMSpagnwvy6E5HA9z
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_29_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - fFhGQQ3CJYi9TaipA
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_30_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - QbWoBvsAzeefN49uq
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_31_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - BLCmGQ5pEtpzoCKrC
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_32_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - YDa8zZ4ZJpmCYQFGE
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_33_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - CwXNpyX2zj8dALGni
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_34_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - Bec9aEg5kru3AfBTC
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_35_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - pxJ7vs6kF4mJtL53u
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_36_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - nA9GkkLNwoehMuZF6
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_37_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - NByeELBDEFjDL8T92
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_38_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - LCSq6SENQnAdAcj4o
+  - He8zHj8sbvb4PpvCT
+  - NXQdzGBkuL2resjjC
+  - FZZDWxbc2MFjg6oFE
+  name: panel_39_matched_pair_exp_design5_matched_20200214_154755
+- factorIds:
+  - LCSq6SENQnAdAcj4o
+  - BK3xuRgodLXzBbGG3
+  - cfjyztHHL3SdHZ6kM
+  - FZZDWxbc2MFjg6oFE
+  name: testGame

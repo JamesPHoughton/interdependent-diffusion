@@ -1,0 +1,94 @@
+factorTypes:
+- _id: a39HzKWMN2BqMKeLJ
+  description: The number of players in a given game.
+  min: 1
+  name: playerCount
+  required: 'true'
+  type: Integer
+- _id: DjKCDtyNpyHu7XvP9
+  description: The length of the game in minutes.
+  min: 1
+  name: duration
+  required: 'true'
+  type: Integer
+- _id: yLgJTwkJB3dh4jh3r
+  description: Which game setup to use for the game.
+  name: gameSetupId
+  required: 'false'
+  type: String
+- _id: experimentDataFileFactorType
+  description: which json file to load the experiment data from
+  name: experimentDataFile
+  required: 'false'
+  type: String
+factors:
+- _id: JyBPo3u4CPgAJck4b
+  factorTypeId: a39HzKWMN2BqMKeLJ
+  name: debug3player
+  value: 3
+- _id: A6nriq6uaerSLGxv2
+  factorTypeId: DjKCDtyNpyHu7XvP9
+  name: play5mins
+  value: 5
+- _id: play8minFactor
+  factorTypeId: DjKCDtyNpyHu7XvP9
+  name: play8mins
+  value: 8
+- _id: gyMzogFBfCYjqZmz3
+  factorTypeId: DjKCDtyNpyHu7XvP9
+  name: play1min
+  value: 1
+- _id: Ye05TiEuuMGgBIeL
+  factorTypeId: a39HzKWMN2BqMKeLJ
+  name: run_20_player
+  value: 20
+- _id: panel_0_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  factorTypeId: yLgJTwkJB3dh4jh3r
+  name: panel_0_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  value: panel_0_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+- _id: panel_0_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  factorTypeId: yLgJTwkJB3dh4jh3r
+  name: panel_0_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  value: panel_0_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+- _id: panel_1_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  factorTypeId: yLgJTwkJB3dh4jh3r
+  name: panel_1_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  value: panel_1_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+- _id: panel_1_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  factorTypeId: yLgJTwkJB3dh4jh3r
+  name: panel_1_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  value: panel_1_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+- _id: exp_20_3_4_13_10_220190708_172010
+  factorTypeId: experimentDataFileFactorType
+  name: exp_20_3_4_13_10_220190708_172010
+  value: exp_20_3_4_13_10_220190708_172010.json
+lobbyConfigs:
+- gameLobbyIds: []
+  timeoutInSeconds: 900
+  timeoutStrategy: fail
+  timeoutType: lobby
+treatments:
+- factorIds:
+  - panel_0_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  - play8minFactor
+  - Ye05TiEuuMGgBIeL
+  - exp_20_3_4_13_10_220190708_172010
+  name: panel_0_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+- factorIds:
+  - panel_0_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  - play8minFactor
+  - Ye05TiEuuMGgBIeL
+  - exp_20_3_4_13_10_220190708_172010
+  name: panel_0_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+- factorIds:
+  - panel_1_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+  - play8minFactor
+  - Ye05TiEuuMGgBIeL
+  - exp_20_3_4_13_10_220190708_172010
+  name: panel_1_treatment_0.00_exp_20_3_4_13_10_220190708_172010
+- factorIds:
+  - panel_1_treatment_1.00_exp_20_3_4_13_10_220190708_172010
+  - play8minFactor
+  - Ye05TiEuuMGgBIeL
+  - exp_20_3_4_13_10_220190708_172010
+  name: panel_1_treatment_1.00_exp_20_3_4_13_10_220190708_172010
