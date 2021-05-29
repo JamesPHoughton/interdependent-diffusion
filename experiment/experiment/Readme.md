@@ -21,8 +21,7 @@ meteor --inspect
 ```
 
 ### To run experiment on galaxy server: (update your hostname)
-1. uncomment lines in the `client: main.js` to make sure that they see the
-production version
+1. Check that all debugging modifications have been cleared
 2. start the mongodb database on atlas
 3. deploy
 ```sh

@@ -288,7 +288,7 @@ def run(n_agents=60, deg=3, n_concepts=25, n_beliefs=25, t_match_susceptibility=
 \hrule
 
 \subsection{Motivating the ``Knowledge Graph'' representation of belief interaction}
-There are two primary ways that we could model the interaction between beliefs. One method used by Friedkin et al. \cite{friedkin2016network} is to create a matrix of the compatibility between candidate beliefs (rows) and preexisting beliefs (columns). In this model, weights in the matrix determine the influence of (unstructured) existing beliefs on the probability of an individual will adopting each candidate belief. This formulation assumes external `logic' under which certain beliefs naturally go together. 
+There are two primary ways that we could model the interaction between beliefs. One method used by Friedkin et al. \cite{friedkin2016network} is to create a matrix of the compatibility between candidate beliefs (rows) and preexisting beliefs (columns). In this model, weights in the matrix determine the influence of (unstructured) existing beliefs on the probability of an individual adopting each candidate belief. This formulation assumes external `logic' under which certain beliefs naturally go together. 
 
 A second method is the knowledge graph representation suggested by Goldberg and Stein \cite{goldberg2018beyond} and by Schilling \cite{schilling2005small}, in which existing beliefs have no independent effect on an an agent's susceptibility to a candidate belief. Instead, they influence future adoption decisions through the structure they create in the individual's knowledge graph. In this representation, all beliefs are potentially compatible with one another, depending on the arrangement of other beliefs that the individual holds.
 
@@ -384,18 +384,18 @@ The Pew Political Typology Survey interviewed 10,013 US adults in three approxim
 
 
 \subsubsection{World Values Survey}
-The 2020 World Values Survey \cite{wvs2020} contains 70,867 responses collected from 2017-2020. The analysis in Fig. 4 used 144 questions relating to apolitical social values. The questions to be used were chosen prior to data observation to focus only on social opinions (i.e. to exclude questions about demographics and other ascribed characteristics, and to exclude explicitly political questions) and to consolidate redundant questions. The question codes included are:
+The 2020 World Values Survey \cite{wvs2020} contains 70,867 responses collected from 2017-2020. The analysis in Fig. 4 of the main body used 144 questions relating to apolitical social values. The questions to be used were chosen prior to data observation to focus only on social opinions (i.e. to exclude questions about demographics and other ascribed characteristics, and to exclude explicitly political questions) and to consolidate redundant questions. The question codes included are:
 
 \noindent
 \texttt{Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q43, Q44, Q58, Q59, Q60, Q61, Q62, Q63, Q64, Q65, Q66, Q67, Q68, Q69, Q70, Q71, Q72, Q73, Q74, Q75, Q76, Q77, Q78, Q79, Q80, Q81, Q82, Q83, Q84, Q85, Q86, Q87, Q88, Q89, Q106, Q107, Q108, Q109, Q110, Q121, Q122, Q123, Q124, Q125, Q126, Q127, Q128, Q129, Q130, Q158, Q159, Q160, Q161, Q162, Q163, Q164, Q165, Q166, Q167, Q168, Q169, Q170, Q171, Q172, Q173, Q174, Q176, Q177, Q178, Q179, Q180, Q181, Q182, Q183, Q184, Q185, Q186, Q187, Q188, Q189, Q190, Q191, Q192, Q193, Q194, Q195, Q196, Q197, Q198, Q235, Q236, Q237, Q238, Q239, Q241, Q242, Q243, Q244, Q245, Q246, Q247, Q248, Q249}
 
-The analysis in Fig. 4 includes a curve for each of 49 different country codes: (parentheses show number of respondents)
+The analysis in Fig. 4 of the main body includes a curve for each of 49 different country codes: (parentheses show number of respondents)
 
 \noindent
 \texttt{AND (1004), ARG (1003), AUS (1813), BGD (1200), BOL (2067), BRA (1762), CHL (1000), CHN (3036), COL (1520), CYP (1000), DEU (1528), ECU (1200), EGY (1200), ETH (1230), GRC (1200), GTM (1203), HKG (2075), IDN (3200), IRN (1499), IRQ (1200), JOR (1203), JPN (1353), KAZ (1276), KGZ (1200), KOR (1245), LBN (1200), MAC (1023), MEX (1739), MMR (1200), MYS (1313), NGA (1237), NIC (1200), NZL (1057), PAK (1995), PER (1400), PHL (1200), PRI (1127), ROU (1257), RUS (1810), SRB (1046), THA (1500), TJK (1200), TUN (1208), TUR (2415), TWN (1223), UKR (1289), USA (2596), VNM (1200), ZWE (1215)}
 
 \subsection{Alternate clustering analysis}
-The analysis presented in Fig. 4 B and C of the main body included connections between all keywords attached to each newspaper article or academic paper. An alternate method of producing these graphs is to only include connections between \textit{pairs} of keywords within each article, randomly selected without replacement. While this results in a significantly sparser dataset, it guarantees that none of the clustering observed is due to clustering within documents. 
+The analysis presented in Fig. 4A of the main body included connections between all keywords attached to each newspaper article or academic paper. An alternate method of producing these graphs is to only include connections between \textit{pairs} of keywords within each article, randomly selected without replacement. While this results in a significantly sparser dataset, it guarantees that none of the clustering observed is due to clustering within documents. 
 
 With this method, the overall clustering is reduced across all thresholds, and in particular thresholds that include keywords found in only a few documents. However, the qualitative prediction of increased clustering among the most popular connections between keywords remains, as shown in Fig. \ref{fig:pairwise_clustering}.
 
@@ -408,7 +408,7 @@ With this method, the overall clustering is reduced across all thresholds, and i
 
 
 \section{Experiment}
-The experimental design had two major objectives. 1) Allow for the manipulation of interdependence between diffusants, and 2) minimize the spillover of real-world polarization into the artificial social networks of the experiment. Beyond those considerations, I wanted to use a set of diffusants that individuals could quickly understand and would be interested in. A detective case solving a burglary was sufficiently relatable and abstract from the real world to serve as a stimulus and manipulation. Section \ref{design_considerations} details the various experiment design choices that were not specific to the manipulation. Section \ref{interface} details the participant's experience, and Section \ref{manipulation} details the design of the mystery's clues, which formed the experimental manipulation. Section \ref{data_collection} describes how data was collected and handled. Section \ref{outcomes} lists outcomes of the experiment that have not already been discussed. 
+The experimental design had two major objectives. 1) Allow for the manipulation of interdependence between diffusants, and 2) minimize the spillover of real-world polarization into the artificial social networks of the experiment. Beyond those considerations, I wanted to use a set of diffusants that individuals could quickly understand and would be interested in. A detective case solving a burglary was sufficiently relatable and abstract from the real world to serve as a stimulus and manipulation. Section \ref{design_considerations} details the various experiment design choices that were not specific to the manipulation. Section \ref{interface} details the participant's experience, and Section \ref{manipulation} details the design of the mystery's clues, which formed the experimental manipulation. Section \ref{data_collection} describes how data was collected and handled. Section \ref{prereg} describes the experiment's preregistration and deviations between the preregistration and the realized experiment. Section \ref{outcomes} lists outcomes of the experiment that have not already been discussed. 
 
 
 
@@ -417,7 +417,7 @@ The experimental design had two major objectives. 1) Allow for the manipulation 
 \label{design_considerations}
 There are many ways that the game interface and experimental parameters could have been implemented. Each decision took into account the feasibility of implementation, the constraints of the online lab context, the desire to create a naturalistic information and task environment, and the desire to cleanly isolate the mechanisms being tested. Below I justify the major decision points.
 
-\textbf{Information was presented to each participant all at once} in the form of Detectives' Notebooks shared by their neighbors. This was an intuitive structure for the detective-game task; it allowed players to quickly understand how their categorization decisions would be shared and how the information was presented to them. There is a slight cost in external validity with this design choice, as it is different from how information is typically presented in social media. However, the alternative ``scrolling feed'' type information display has recency and primacy effects, and opens questions about how we should aggregate social information from multiple players. Showing all information at once, in the same order that it is sorted by the neighbor, eliminates the effect of alternate ordering sequences.
+\textbf{Information was presented to each participant all at once} in the form of Detectives' Notebooks shared by their neighbors. This was an intuitive structure for the detective-game task; it allowed players to quickly understand how their categorization decisions would be shared and how the information was presented to them. There is a slight cost in real-world representativeness with this design choice, as it is different from how information is typically presented in social media. However, the alternative ``scrolling feed'' type information display has recency and primacy effects, and opens questions about how we should aggregate social information from multiple players. Showing all information at once, in the same order that it is sorted by the neighbor, eliminates the effect of alternate ordering sequences.
 
 \textbf{Individuals had three social network neighbors.} 
 Given the chosen display, the number of neighbors is limited by the size of the screen and an individual’s ability to process information. The minimum number of neighbors for a non-trivial social network is 3, and is also a reasonable number for managing the cognitive load in the game.
@@ -429,17 +429,17 @@ Fewer starting clues are preferred for minimizing individuals' cognitive load. W
 Larger numbers of players are better for generalizability and seeing an effect size. On the other hand, smaller networks allow more replications and are easier to recruit and coordinate. There needed to be enough players that the mean shortest-path-length was greater than two, to realistically represent multi-stage diffusion. Pilot tests showed that we could reasonably expect to fill four 20-player games at once, and simulation suggested that 20-player networks should be sufficient to detect an effect size.
 
 \textbf{The social networks were shaped as a dodecahedron and a regular connected caveman (k=5) network.}
-I evaluated eleven symmetric candidate networks (n=20, degree=3) shown in Fig. \ref{fig:all_networks}. Of this set, the Dodecahedral network minimizes the average shortest path between individuals with no network clustering, and represents a social network in which \textit{a priori} we should expect to see low polarization. A regular connected caveman network maximizes the characteristic path length and exhibits strong clustering, and so we expect to see more polarization in this network. Edgelists for each of the eleven networks are are available in the code supplement to the preregistration. 
+I evaluated eleven symmetric candidate social networks (n=20, degree=3) shown in Fig. \ref{fig:all_networks}. Of this set, the dodecahedral network minimizes the average shortest path between individuals with no network clustering, and represents a social network in which \textit{a priori} we should expect to see low polarization. A regular connected caveman network maximizes the characteristic path length and exhibits strong clustering, and so we expect to see more polarization in this network. Edgelists for each of the eleven social networks are are available in the \href{https://github.com/JamesPHoughton/interdependent-diffusion/tree/master/experiment/setup}{/experiment/setup} folder of the code repository.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.9\columnwidth]{All Networks.png}
-\caption{A variety of possible networks were evaluated, and two were selected (Dodecahedron and Regular Caveman) to maximize the difference in average clustering and characteristic path length.}
+\caption{Various possible social networks were evaluated, and two were selected (dodecahedron and regular caveman) to maximize the difference in average clustering and characteristic path length.}
 \label{fig:all_networks}
 \end{figure}
 
 \textbf{Each game contained 78 unique clues.}
-From an information diversity perspective, more clues is better. With 4 starting clues and 20 players, we can have up to 80 unique clues in the game. A complete 13 node clue network has 78 clues, and the two spots remaining were filled with the (given) link between the crime scene and the stolen object. 
+From an information diversity perspective, more clues is better. With 4 starting clues and 20 players, we can have up to 80 unique clues in the game. A complete 13 node clue network (knowledge graph) has 78 clues, and the two spots remaining were filled with the (given) link between the crime scene and the stolen object. 
 
 \textbf{Each clue was represented in exactly 1 starting notebook.}
 In order to make sure that the initial frequency of information in the network did not bias the network to certain outcomes, each clue was present exactly once in the clues initially assigned to players. Other than this constraint, clues were assigned randomly. The clue linking the stolen object to the crime scene was included 2 additional times to fill out the 80 slots (20 players * 4 starting clues) available.
@@ -779,7 +779,7 @@ Someone   wearing \{Clothing\_2\} was seen on security footage \{clothingFootage
 \restoregeometry
 
 \subsubsection{Assembling sets of clues for use in games}
-This experiment manipulates the structure of clues within the mystery game, to create an ``interdependent'' condition in which the clues interact strongly with each other, and an ``independent'' condition that limits those interactions while preserving as much similarity with the treatment condition as possible. 
+This experiment manipulates the structure of clues within the detective game, to create an ``interdependent'' condition in which the clues interact strongly with each other, and an ``independent'' condition that limits those interactions while preserving as much similarity with the treatment condition as possible. 
 
 Clues were constructed in three waves. The first wave was identical for both conditions, and is illustrated in Fig. \ref{fig:spokes}. Clues were created that link ‘hub’ concepts (including a crime scene and a stolen object) to ‘rim’ concepts (including three suspects, two articles of clothing, two physical descriptions, two tools, and two vehicles). For example “\textbf{Hayes} was seen at the \textbf{Daly Auction House}” or “The case for the \textbf{diamond} might have been opened using a \textbf{circular saw}”. “Spoke” clues were independent of one another, as they could only interact via association with the crime scene and stolen object – items that were known in advance to be relevant to the mystery. There were 11 rim concepts and 2 hub concepts, and so 22 spoke clues.
 
@@ -857,10 +857,11 @@ As the game was played in real-time, the effect of a participant ‘dropping out
 
 When an individual failed to complete the post-game survey, aggregate results for their condition were calculated based upon the remaining players. Aggregate results for the paired comparison conditions were calculated as the average of all same-sized subsets of players in each comparison condition.
 
-\subsection{Outcomes}
-\label{outcomes}
+\subsection{Preregistration}
+\label{prereg}
 
-\subsubsection{Differences between preregistration and the experiment as realized}
+The preregistration for the experiment included all the code necessary to run and analyze the experiment presented in this paper, such that a direct replication can be conducted from the preregistered materials. The preregistration is available at \href{https://osf.io/239ns}{https://osf.io/239ns}. In addition to the analyses presented in this paper, the preregistration also included a secondary analysis of mediating and moderating effects of interdependent diffusion that will be reported in a second paper. 
+
 The experiment differed from the preregistered procedure in three minor ways: expanding the recruitment pool, correcting a coding mistake, and formalizing an analysis that was preregistered with only a text description.
 
 \begin{enumerate}
@@ -872,137 +873,144 @@ The experiment differed from the preregistered procedure in three minor ways: ex
 
 \end{enumerate}
 
+\subsection{Outcomes}
+\label{outcomes}
 
-
-
-\subsubsection{Recruitment and payment of experimental subjects}
+\subsubsection{Participants' experience}
 
 Participants were Amazon Mechanical Turk workers who lived in the US or Canada and were over 18 years of age. Workers must have completed at least 100 HITs and have a 90\% or better approval rating. Recruitment and compensation were handled using TurkPrime (\url{www.cloudresearch.com}).
 
-For blocks 0-2, recruitment took place in the hour preceding a game launch via a timed “sign-up” HIT. This recruitment strategy had been shown to be effective during pilots, but did not scale well when multiple blocks were run during the same day.
-
-For blocks 3-29, recruitment took advantage of a panel of workers who had previously indicated willingness to be notified of upcoming games. This panel was expanded through ongoing paid and unpaid recruitment HITs during the period the experiments were run. Panel members were notified via email at the beginning of each day when experiments would take place, and again 10 minutes prior to the launch of a game. 
-
-At the scheduled game time, HITs were made available to any worker meeting the qualifications, whether they were in the  original panel or not. 
+For blocks 0-2, recruitment took place in the hour preceding a game launch via a timed “sign-up” HIT. This recruitment strategy had been shown to be effective during pilots, but did not scale well when multiple blocks were run during the same day. For blocks 3-29, recruitment took advantage of a panel of workers who had previously indicated willingness to be notified of upcoming games. This panel was expanded through ongoing paid and unpaid recruitment HITs during the period the experiments were run. Panel members were notified via email at the beginning of each day when experiments would take place, and again 10 minutes prior to the launch of a game. At the scheduled game time, HITs were made available to any worker meeting the qualifications, whether they were in the original panel or not. 
 
 Participants were compensated \$0.10 for accepting the game HIT, in addition to \$1 for training, \$1 for playing the game, and up to \$2 in bonuses. Participants who trained but were unable to play were eligible to attempt to play again. Those who completed training and entered the game were blocked from participating in future games via an exclusion qualification.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.6\columnwidth]{recruitment.png}
 \caption{Players active by stage and time. (Data from pilot test.)}
 \label{fig:recruitment}
 \end{figure}
 
-The game takes about 20 minutes to play, including training, waiting room, and follow-up. The average payout was approximately \$4.00, for an hourly rate of approximately \$12.00/hr. Participants who trained but were unable to play spent about 5 minutes in the platform before they were bumped. They earned \$1.10, for an approximate hourly rate of \$13.20.  Fig. \ref{fig:recruitment} shows the number of participants active in different parts of the game at different times for a 2-condition pilot test. There were necessarily some individuals who were dropped from training when the game launched, as the number of individuals who would showed up for a game was unpredictable.
+The game took about 20 minutes to play, including training, waiting room, and follow-up. The average payout was approximately \$4.00, for an hourly rate of approximately \$12.00/hr. Participants who trained but were unable to play spent about 5 minutes in the platform before they were bumped. They earned \$1.10, for an approximate hourly rate of \$13.20.  Fig. \ref{fig:recruitment} shows the number of participants active in different parts of the game at different times for a 2-condition pilot test. There were necessarily some individuals who were dropped from training when the game launched, as the number of individuals who would showed up for a game was unpredictable.
 
 
 
-\subsubsection{Results}
+\subsubsection{Detailed Results}
 Over eight minutes of gameplay, participants on average made 28.4 classifications and adopted 16.2 clues as promising leads. 
 Despite the symmetry of the setup, and the fact that there was by design no solution to the mystery, participants came to strongly-held beliefs about which suspect was guilty and how they performed the crime. On average, participants felt that the most likely suspect was almost 50\% more likely to be involved in the crime than the least likely suspect, and over half of participants reported confidence in at least one part of their solution of 95\% or greater. Table \ref{Tab:effect_summary} reports the effect sizes for all comparisons made in the experiment.
 
-\begin{table}[H]
+% \begin{table}[H]
+% \centering
+% \caption{Effect and Interaction Summary}
+% \label{Tab:effect_summary}
+% \begin{tabular}{llcccc}
+% \hline
+%  &
+%   \multicolumn{1}{l|}{} &
+%   \multicolumn{3}{c|}{\textbf{Effect over baseline condition}} &
+%   \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Interaction of\\ Interdep Clues\\ and Polarizing\\ Network\end{tabular}} \\
+%  &
+%   \multicolumn{1}{l|}{} &
+%   \begin{tabular}[c]{@{}c@{}}Interdep\\ Clues Alone\end{tabular} &
+%   \begin{tabular}[c]{@{}c@{}}Polarizing\\ Network\\ Alone\end{tabular} &
+%   \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Interdep\\ Clues and\\ Polarizing \\ Network\end{tabular}} &
+%   \\ \hline
+% \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Within-Camp\\ Similarity\end{tabular}} &
+%   \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
+%   \textbf{+0.0249**} &
+%   +0.155*** &
+%   \multicolumn{1}{c|}{+0.158***} &
+%   -.0227 \\
+%  &
+%   \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
+%   \textbf{-0.00389} &
+%   +.0231 &
+%   \multicolumn{1}{c|}{+.0357***} &
+%   +.0183 \\ \hline
+% \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Across-Camp\\ Similarity\end{tabular}} &
+%   \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
+%   \textbf{+0.0112} &
+%   -.0307*** &
+%   \multicolumn{1}{c|}{-.0310***} &
+%   -.00827 \\
+%  &
+%   \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
+%   \textbf{-0.0345*} &
+%   -.0904*** &
+%   \multicolumn{1}{c|}{-.0844***} &
+%   +.0402 \\ \hline
+% \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Alignment w/ \\ Political Axis\end{tabular}} &
+%   \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
+%   \textbf{+2.16\%**} &
+%   +13.8\%*** &
+%   \multicolumn{1}{c|}{+14.2\%***} &
+%   -1.79\% \\
+%  &
+%   \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
+%   \textbf{+2.77\%**} &
+%   +7.16\%*** &
+%   \multicolumn{1}{c|}{+5.34\%***} &
+%   -4.57\%** \\ \hline
+% Confidence &
+%   \multicolumn{1}{l|}{Self-Report} &
+%   +2.17\%** &
+%   +0.682\% &
+%   \multicolumn{1}{c|}{+3.74\%**} &
+%   +.887\% \\
+% Consensus &
+%   \multicolumn{1}{l|}{Self-Report} &
+%   -0.624\% &
+%   +1.75\%* &
+%   \multicolumn{1}{c|}{+1.03\%} &
+%   -.0925\% \\ \hline
+% \multicolumn{6}{l}{\begin{tabular}[c]{@{}l@{}}*P value \textless{}.1, **P value \textless{}.05, ***P value \textless{}.01; one-sided pairwise T-tests; n=30 pairs;\\ Baseline: Independent clues and non-polarizing social network; 1 Preregistered.\end{tabular}} \\ \hline
+% \end{tabular}
+% \end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[h]
 \centering
 \caption{Effect and Interaction Summary}
 \label{Tab:effect_summary}
-\begin{tabular}{llcccc}
+
+\begin{tabular}{llcccccc}
 \hline
- &
-  \multicolumn{1}{l|}{} &
-  \multicolumn{3}{c|}{\textbf{Effect over baseline condition}} &
-  \multirow{4}{*}{\begin{tabular}[c]{@{}c@{}}Interaction of\\ Interdep Clues\\ and Polarizing\\ Network\end{tabular}} \\
- &
-  \multicolumn{1}{l|}{} &
-  \begin{tabular}[c]{@{}c@{}}Interdep\\ Clues Alone\end{tabular} &
-  \begin{tabular}[c]{@{}c@{}}Polarizing\\ Network\\ Alone\end{tabular} &
-  \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Interdep\\ Clues and\\ Polarizing \\ Network\end{tabular}} &
-  \\ \hline
+ & \multicolumn{1}{l|}{}              & \multicolumn{3}{c|}{\textbf{Effect of Interdependence}}        & \multicolumn{3}{c}{\textbf{Effect of Network Structure}} \\ \cline{3-8} 
+ & \multicolumn{1}{l|}{}              & Effect Size & p value & \multicolumn{1}{c|}{90\% CI}           & Effect Size       & p-value       & 90\% CI              \\ \hline
 \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Within-Camp\\ Similarity\end{tabular}} &
-  \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
-  \textbf{+0.0249**} &
-  +0.155*** &
-  \multicolumn{1}{c|}{+0.158***} &
-  -.0227 \\
- &
-  \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
-  \textbf{-0.00389} &
-  +.0231 &
-  \multicolumn{1}{c|}{+.0357***} &
-  +.0183 \\ \hline
+  \multicolumn{1}{l|}{- Behavioral} &
+  0.026 &
+  0.015 &
+  \multicolumn{1}{c|}{(0.0083,  0.045)} &
+  .16 &
+  1.17e-9 &
+  (.13, .19) \\
+ & \multicolumn{1}{l|}{- Self-Report} & -0.0039     & 0.41    & \multicolumn{1}{c|}{(-0.036,  0.025)}  & .021              & .12           & (.0099, .050)        \\ \hline
 \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Across-Camp\\ Similarity\end{tabular}} &
-  \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
-  \textbf{+0.0112} &
-  -.0307*** &
-  \multicolumn{1}{c|}{-.0310***} &
-  -.00827 \\
- &
-  \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
-  \textbf{-0.0345*} &
-  -.0904*** &
-  \multicolumn{1}{c|}{-.0844***} &
-  +.0402 \\ \hline
-\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Alignment w/ \\ Political Axis\end{tabular}} &
-  \multicolumn{1}{l|}{Behavioral\textsuperscript{1}} &
-  \textbf{+2.16\%**} &
-  +13.8\%*** &
-  \multicolumn{1}{c|}{+14.2\%***} &
-  -1.79\% \\
- &
-  \multicolumn{1}{l|}{Self-Report\textsuperscript{1}} &
-  \textbf{+2.77\%**} &
-  +7.16\%*** &
-  \multicolumn{1}{c|}{+5.34\%***} &
-  -4.57\%** \\ \hline
-Confidence &
-  \multicolumn{1}{l|}{Self-Report} &
-  +2.17\%** &
-  +0.682\% &
-  \multicolumn{1}{c|}{+3.74\%**} &
-  +.887\% \\
-Consensus &
-  \multicolumn{1}{l|}{Self-Report} &
-  -0.624\% &
-  +1.75\%* &
-  \multicolumn{1}{c|}{+1.03\%} &
-  -.0925\% \\ \hline
-\multicolumn{6}{l}{\begin{tabular}[c]{@{}l@{}}*P value \textless{}.1, **P value \textless{}.05, ***P value \textless{}.01; one-sided pairwise T-tests; n=30 pairs;\\ Baseline: Independent clues and non-polarizing social network; 1 Preregistered.\end{tabular}} \\ \hline
+  \multicolumn{1}{l|}{- Behavioral} &
+  0.010 &
+  0.22 &
+  \multicolumn{1}{c|}{(-0.012,  0.032)} &
+  -.034 &
+  .004 &
+  (-.054, -.016) \\
+ & \multicolumn{1}{l|}{- Self-Report} & -0.034      & 0.058   & \multicolumn{1}{c|}{(-0.067, 0.0015)}  & -.089             & 6.3e-5        & (-.12, -.057)        \\ \hline
+\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Alignment w/\\ Left-Right Axis\end{tabular}} &
+  \multicolumn{1}{l|}{- Behavioral} &
+  2.13\% &
+  0.016 &
+  \multicolumn{1}{c|}{(0.61\%, 3.72\%)} &
+  13.7\% &
+  2.1e-11 &
+  (.12, .16) \\
+ & \multicolumn{1}{l|}{- Self-Report} & 2.81\%        & 0.022   & \multicolumn{1}{c|}{(0.57\%,  5.03\%)} & 7.2\%             & 2.3e-5        & (4.8\%, 9.8\%)       \\ \hline
+\multicolumn{8}{l}{\begin{tabular}[c]{@{}l@{}}Baseline for effect: Independent clues and non-polarizing social network. \\ One-sided pairwise T-tests; n=30 pairs; unadjusted p-values\end{tabular}} \\ \hline
 \end{tabular}
 \end{table}
 
 The presented theory does not predict how individuals will feel about their team’s performance. Interdependence did not change the perceived consensus among the team by any measurable amount, despite the increase in polarization. However, participants in the interdependent condition did report feeling more confident in their solution (+2.17\% p=.045). This is not a particularly large effect, as the results were measured on a 100 point scale.
 
-
-\subsubsection{Secondary Analyses}
-
-
-\textbf{Moderation.} 
-A practical question is whether and how polarization can be reduced. Based upon the prior literature, a reasonable strategy would be to shorten the average distance between individuals and break up clusters, to help information travel across the network before camps consolidate. If there is no interaction (or a positive interaction) between the effects of interdependence and network structure, these changes to social network structure would be at least as powerful when beliefs interdepend as they are when beliefs spread on their own. However, if there is a negative interaction between interdependence and network structure, then these interventions will not be as effective as we might expect.
-
-The final condition of this experiment tested for a negative interaction between network structure and belief interdependence, and forms the last column of Table \ref{Tab:effect_summary}. Very weak evidence (self-reported alignment along a left-right axis -4.6\% $p=.03$) suggests that polarization may ``saturate'' when the two causes interact, although with $n=30$ comparisons this moderation effect is difficult to discern. 
-\\
-\\
-\noindent
-\textbf{Mediation.}
-The primary outcomes described in the main body of the paper show that interdependence influences social contagion in ways consistent with the simulated predictions. In the mediation analysis, I had hoped to explore the mediating effect of similarity to a neighbor on adoption decisions, and dig more deeply into the process in which agreement cascades create the measured outcomes. 
-
-Unfortunately, the preregistered analysis code for the mediation analysis was misspecified in several ways. Firstly, the structural equation model used the outputs of a cox proportional hazard model in a way that did not properly propagate error through the analysis. Secondly, the cox proportional hazard model did not properly account for multicollinearity evident in the causal structure, and so introduced bias into the estimates of the regressor of interest by controlling on the correlated variable. The result of the preregistered analysis are reported in Table \ref{Tab:mediaiton} for completeness, although the above errors render them somewhat meaningless (and in most cases nonphysical). Correcting these issues is a nontrivial task with its own subjective set of decisions to be made, and is perhaps most appropriate for a follow-up experiment. Fortunately, the issues with the mediation analysis do not impact the primary conclusions.
-
-\begin{table}[H]
-\centering
-\caption{Results of (faulty) mediation analysis}
-\label{Tab:mediaiton}
-\begin{tabular}{lll}
-\hline
- & \begin{tabular}[c]{@{}l@{}}Fraction of effect\\ accounted for by\\ similarity to exposer\end{tabular} & p-value \\ \hline
-Axis alignment (behavioral)          & 0.006 & .996 \\
-Axis alignment (self-report)         & 2.96 & .70  \\
-Within-camp similarity (behavioral)  & 2.6   & .71  \\
-Within-camp similarity (self-report) & -1.6  & .62  \\
-Across-camp similarity (behavioral)  & 0.17  & .80  \\
-Across-camp similarity (self-report) & -61.6 & .99  \\ \hline
-\end{tabular}
-\end{table}
 
 
 
@@ -1019,11 +1027,11 @@ The mechanisms presented in this paper are also likely to be less important when
 
 \subsection{Replicating these results}
 
-All of the code required to conduct this experiment and all of the data generated by the experiment is available open-source at \url{https://github.com/JamesPHoughton/detective-game-interdependent-diffusion}. An exact replication of these results can be run without writing any code. Slight changes to the replication - such as creating new sets of clues, or using a different social network - can be accomplished by changing the experiment's configuration file. 
+All of the code required to conduct this experiment and all of the data generated by the experiment is available open-source at \href{https://github.com/JamesPHoughton/interdependent-diffusion}{https://github.com/JamesPHoughton/interdependent-diffusion}. An exact replication of these results can be run without writing any code. Slight changes to the replication - such as creating new sets of clues, or using a different social network - can be accomplished by changing the experiment's configuration file. 
 
-Resources that will help a researcher replicate this analysis include the Empirica documentation (\url{https://empirica.ly/}) and introductory paper \cite{almaatouq2021empirica}, and the Empirica code repository: \url{https://github.com/empiricaly/meteor-empirica-core}. 
+Resources that will help a researcher replicate this analysis include the Empirica documentation (\href{https://empirica.ly/}{https://empirica.ly/}) and introductory paper \cite{almaatouq2021empirica}, and the Empirica code repository: \href{https://github.com/empiricaly/meteor-empirica-core}{https://github.com/empiricaly/meteor-empirica-core}. 
 
-I am also happy to advise replication efforts and answer questions about the code or implementation at the github repository for this experiment: \url{https://github.com/JamesPHoughton/detective-game-interdependent-diffusion/issues}.
+I am also happy to advise replication efforts and answer questions about the code or implementation at the github repository for this experiment: \href{https://github.com/JamesPHoughton/interdependent-diffusion/issues}{Repository Issues}.
 
 \subsection{Extending this research}
 There are a number of obvious opportunities for extending this research. In this simulation and experiment, individuals do not verify their beliefs against ground-truth. We should hope that in the real world, this occurs at least occasionally, and that when it does, it forms a corrective force against the drivers of polarization. An interesting extension to this experiment would be to test the effects of belief verification on macro-scale outcomes. An experimenter could manipulate the cost to verify information, and the correlation of this cost between clues, or between members of the population, and examine the effects of specialization or general knowledge on collective problem solving.
